@@ -10,12 +10,12 @@ Various example commands are provided in each section of this readme to run diff
 
 ### Remove Human Reads
 
-Human derived reads must be removed from the sWGA before any analysis is run. Likewise, sWGA data uploaded to NCBI SRA must have human-dreived reads removed. All workflows incorporate human-read removal steps (__make sure__) and human-removed reads will be copied to the xyz directory (__make sure__). You can also run the following script to remove human reads without running any of the full analyses:
+Human derived reads must be removed from the sWGA data before any analysis is run. Likewise, sWGA data uploaded to NCBI SRA must have human-dreived reads removed. All workflows incorporate human-read removal steps (__make sure__) and human-removed reads will be copied to the xyz directory (__make sure__). You can also run the following script to remove human reads without running any of the full analyses:
 
 `nextflow run main.nf -entry mapHuman_then3D7 -profile singularity -with-report nextflow_logFiles/$myDate\_report.html -with-trace nextflow_logFiles/$myDate\_trace.txt`
 
 This will remove human reads and map to the 3D7 reference genome to ascertain depth of coverage accross the *P. falciparum* 3D7 reference genome.
-
+#### Also stuff about genome coverage with R script (update this)
 
 ### Geo Prediction
 
